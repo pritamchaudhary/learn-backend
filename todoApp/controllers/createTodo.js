@@ -19,7 +19,7 @@ exports.createTodo = async (req, res) => {
     console.error(err);
     console.log(err);
     res.status(500).json({
-      success: true,
+      success: false,
       data: "internal server error",
       message: err.message,
     });
